@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Page</title>
+  </head>
+  <body>
+    <h3>Login Form</h3>
+    <form>
+      Username: <input id="username" type="text" name="username"> <br>
+      Password: <input id="password" type="password" name="password"> <br>
+      <input id="loginbutton" type="button" value="Login">
+    </form>
+    <script>
+      document.getElementById('loginbutton').onclick = function(event) {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        setTimeout(function() {
+          alert('Username: ' + username + ' and Password: ' + password);
+        });
+      };
+    </script>
+  </body>
+</html>
